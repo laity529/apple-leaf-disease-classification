@@ -1,0 +1,32 @@
+# 果园病虫害项目 .gitignore（复制后重命名为 .gitignore）
+# Windows 改名命令： ren gitignore模板.txt .gitignore
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# ============ 数据集（90MB 图像，不上传）============
+apple_source/
+data/
+*.zip
+*.tar
+*.tar.gz
+
+# ============ 模型权重（42MB，不上传）============
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+weights/
+
+# ============ 训练产物 ============
+runs/
+logs/
+*.log
+
+# ============ 编辑器与系统 ============
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
